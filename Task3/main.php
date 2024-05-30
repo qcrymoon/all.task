@@ -25,7 +25,7 @@ function format_string($input): string
     return $result;
 }
 
-$input = "This is a test! 123, ABC";
+$input = "test! 123, ABC";
 $output = format_string($input);
 echo $output; // Output: "TiIs Is A A"
 

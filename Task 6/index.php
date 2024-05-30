@@ -1,6 +1,6 @@
 <?php
 
-// Êëàñ àâòîáóñó
+
 class Bus {
     protected $type;
     protected $capacity;
@@ -23,7 +23,7 @@ class Bus {
     }
 }
 
-// Ï³äêëàñè àâòîáóñ³â
+// ÃÂ³Ã¤ÃªÃ«Ã Ã±Ã¨ Ã Ã¢Ã²Ã®Ã¡Ã³Ã±Â³Ã¢
 class BigBus extends Bus {
     public function __construct($capacity) {
         parent::__construct("Big Bus", $capacity);
@@ -42,7 +42,7 @@ class Tralik extends Bus {
     }
 }
 
-// Êëàñ ïàñàæèðà
+// ÃŠÃ«Ã Ã± Ã¯Ã Ã±Ã Ã¦Ã¨Ã°Ã 
 class Passenger {
     protected $type;
 
@@ -55,7 +55,7 @@ class Passenger {
     }
 }
 
-// Ï³äêëàñè ïàñàæèð³â
+// ÃÂ³Ã¤ÃªÃ«Ã Ã±Ã¨ Ã¯Ã Ã±Ã Ã¦Ã¨Ã°Â³Ã¢
 class Student extends Passenger {
     public function __construct() {
         parent::__construct("Student");
@@ -74,7 +74,7 @@ class Programist extends Passenger {
     }
 }
 
-// Êëàñ çóïèíêè
+// ÃŠÃ«Ã Ã± Ã§Ã³Ã¯Ã¨Ã­ÃªÃ¨
 class BusStop {
     protected $name;
 
@@ -87,7 +87,7 @@ class BusStop {
     }
 }
 
-// Ï³äêëàñè çóïèíîê
+// ÃÂ³Ã¤ÃªÃ«Ã Ã±Ã¨ Ã§Ã³Ã¯Ã¨Ã­Ã®Ãª
 class Konechka extends BusStop {
     public function __construct() {
         parent::__construct("Konechka");
@@ -100,7 +100,7 @@ class SimpleStop extends BusStop {
     }
 }
 
-// Ïðèêëàä âèêîðèñòàííÿ êëàñ³â
+// ÃÃ°Ã¨ÃªÃ«Ã Ã¤ Ã¢Ã¨ÃªÃ®Ã°Ã¨Ã±Ã²Ã Ã­Ã­Ã¿ ÃªÃ«Ã Ã±Â³Ã¢
 $bigBus = new BigBus(50);
 echo $bigBus->getType() . " has a capacity of " . $bigBus->getCapacity() . " passengers.\n";
 $bigBus->drive();
